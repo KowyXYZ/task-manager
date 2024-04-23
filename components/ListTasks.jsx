@@ -117,10 +117,8 @@ const SingleTask = ({task, tasks, setTasks}) => {
     return (
         <div ref={drag} className={` relative p-4 bg-[#121212] text-[#fff] shadow-md rounded-md ${isDragging ? 'opacity-25' : 'opacity-100'} cursor-grab`}>
             <p>{task.name}</p>
-            <button className='absolute bottom-3.5 right-1 text-slate-400' onClick={() => handleRemove(task.id)}>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                </svg>
+            <button className='font-black absolute bottom-3.5 right-4 text-slate-400' onClick={() => handleRemove(task.id)}>
+              X
             </button>
         </div>
     )

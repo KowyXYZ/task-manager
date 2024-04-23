@@ -9,7 +9,13 @@ import { HTML5Backend } from 'react-dnd-html5-backend'
 
 const page = () => {
 
-    const [tasks, setTasks] = useState([])
+    const [tasks, setTasks] = useState([
+      {
+        id: '111',
+        name: 'Give a Star',
+        status: 'todo'
+      }
+    ])
 
     useEffect(() => {
       setTasks(JSON.parse(localStorage.getItem('tasks')))
