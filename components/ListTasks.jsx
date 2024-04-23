@@ -65,7 +65,7 @@ const Section = ({status, key, tasks, setTasks, todos, inProgress , closed}) => 
     const addItemToSection = (id) => {
         setTasks(prev => {
             const mTasks = prev.map(t => {
-                if(t.id === id) {
+                if(t?.id === id) {
                     return {...t, status: status}
                 }
                 return t
