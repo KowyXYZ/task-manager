@@ -66,14 +66,13 @@ const Section = ({status, key, tasks, setTasks, todos, inProgress , closed}) => 
         setTasks(prev => {
             const mTasks = prev.map(t => {
                 if(t?.id === id) {
-                    return {...t, status: status}
+                    return {...t, status: status};
                 }
-                return t
-            })
-
-            localStorage.setItem('tasks', JSON.stringify(mTasks))
-
-            return mTasks
+                return t;
+            });
+    
+            localStorage.setItem('tasks', JSON.stringify(mTasks));
+            return mTasks;
         })
     }
 
