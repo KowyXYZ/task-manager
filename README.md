@@ -3,7 +3,7 @@
 ## Features
 
 - **Multiple Task Management**: Move your tasks from progress to closed.
-- **Auto-Save**: Your code is saved in local storage.
+- **Auto-Save**: Your tasks are saved in local storage.
 
 ## Built With
 
